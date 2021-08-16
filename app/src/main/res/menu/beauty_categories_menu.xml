@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_nails"
+        android:title="@string/nails" />
+    <item
+        android:id="@+id/navigation_hair"
+        android:title="@string/hair" />
+
+    <item
+        android:id="@+id/navigation_massage"
+        android:title="@string/massage" />
+
+    <item
+        android:id="@+id/navigation_waxing"
+        android:title="@string/waxing" />
+
+    <item
+        android:id="@+id/navigation_facials"
+        android:title="@string/facials" />
+
+    <item
+        android:id="@+id/navigation_makeup"
+        android:title="@string/makeup" />
+
+</menu>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Activitys.Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_top_image"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/background_bottom_image"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome Back!"
+                        android:textColor="@color/app_colour"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/oswald" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="8dp"
+                        android:textColor="@color/black"
+                        android:layout_margin="26dp"
+                        android:text="@string/lorem_lpsum_is_simply"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:drawableStart="@drawable/profile_email"
+                        android:drawablePadding="12dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/email_address"/>
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/forgat_password"
+                        android:drawablePadding="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/password"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/blue_theme_colour"
+                        android:text="Forgot Password?"
+                        android:onClick="forgot_password"
+                        android:textAllCaps="false"
+                        android:background="?android:attr/selectableItemBackground"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:onClick="login"
+                        android:background="@drawable/button_background"
+                        android:orientation="horizontal"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/tvSearchCaption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/oswald"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:text="@string/login" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@color/black"
+                        android:text="@string/there_are_many_variations"/>
+
+                    <View
+                        android:layout_width="110dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/app_colour"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/blue_theme_colour"
+                        android:text="Not a Member yet !"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tap_here"
+                        android:textColor="@color/blue_theme_colour"
+                        android:textSize="20sp"
+                        android:onClick="OpenSignUpscreen"
+                        android:padding="4dp"
+                        android:fontFamily="@font/oswald"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

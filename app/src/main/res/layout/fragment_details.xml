@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Inner_Fragments.Details">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/light_gray">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/map_image" />
+
+
+            </com.google.android.gms.maps.MapView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:focusable="true">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/owner_image"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+
+                        android:src="@color/gray"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/white" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="16dp"
+                    android:layout_weight=".55"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/oswald"
+                        android:textColor="@color/white"
+                        android:text="@string/personal_trainer" />
+
+                    <TextView
+                        android:id="@+id/shop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:maxLines="1"
+                        android:text="It is a long established fact" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/map_intent"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="26dp"
+                        android:src="@drawable/cursor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mapview"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/oswald"
+                    android:padding="18dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_colour"
+                    android:text="Contact and Business hours" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_colour"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mapview"
+                    android:weightSum="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.01"
+                        android:src="@drawable/mobile"/>
+
+                    <TextView
+                        android:id="@+id/details_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_weight="0.7"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textStyle="bold"
+                        android:paddingStart="2dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/app_colour"
+                        android:text="+91 9876543210"/>
+
+                    <LinearLayout
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="12dp"
+                        android:gravity="center"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/tvSearchCaption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/app_colour"
+                            android:textAllCaps="true"
+                            android:text="Contact" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_colour"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Monday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="Mon - Fri"
+                        android:padding="8dp"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/first_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="09:00 AM"
+                        android:padding="8dp"
+                        android:layout_toLeftOf="@+id/to"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="to"
+                        android:padding="8dp"
+                        android:layout_toLeftOf="@+id/last_time"
+                        android:textColor="@color/app_colour"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/last_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="08:00 PM"
+                        android:padding="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/sat_sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Monday"
+                        android:fontFamily="@font/oswald"
+                        android:text="Sat - Sun"
+                        android:padding="8dp"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/morning_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="06:00 AM"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/second_to"
+                        android:layout_below="@+id/first_time"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/second_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="to"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/evening_time"
+                        android:layout_below="@+id/first_time"
+                        android:textColor="@color/app_colour"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/evening_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/oswald"
+                        android:text="08:00 PM"
+                        android:padding="8dp"
+                        android:layout_below="@+id/first_time"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/app_colour"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

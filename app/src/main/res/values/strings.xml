@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Let\'s Book</string>
+    <string name="enable_location_services">Enable Location Services</string>
+    <string name="get_recommendations_of_grate_businesses">Get recommendations of great businesses! Turn on location service so we can show you what is nearby</string>
+    <string name="turn_on_location_services">Turn on Location services</string>
+    <string name="not_now">Not now</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="lorem_lpsum_is_simply">Lorem lpsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="there_are_many_variations">There are many variations of passages of <b>Lorem lpsum available, but the</b> majority have suffered alteration is some form, by injected humor.</string>
+    <string name="already_a_member">Already a Member?</string>
+    <string name="tap_here">Tap here</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="what_is_lorem_lpsum">What is Lorem lpsum?</string>
+    <string name="first_and_last_name">First and Last Name</string>
+    <string name="call_number">Call Number</string>
+    <string name="confirm_call_number">Confirm Call Number</string>
+    <string name="location">Location</string>
+    <string name="home">Home</string>
+    <string name="my_booking">My Booking</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wellness">Wellness</string>
+    <string name="beauty">Beauty</string>
+    <string name="personal_trainer">Personal Trainer</string>
+    <string name="fitness_clubs">Fitness Clubs</string>
+    <string name="supplements">Supplements</string>
+    <string name="makeup">Makeup</string>
+    <string name="facials">Facials</string>
+    <string name="waxing">Waxing</string>
+    <string name="massage">Massage</string>
+    <string name="hair">Hair</string>
+    <string name="nails">Nails</string>
+    <string name="book">Book</string>
+    <string name="sign_up_">Sign up</string>
+    <string name="name">Name</string>
+    <string name="profile_name">User Name</string>
+    <string name="it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_and_condition">Term and condition</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="conform_new_password">Confirm New Password</string>
+    <string name="dietitian">Dietitian</string>
+    <string name="physiotherapist">Physiotherapist</string>
+    <string name="rupee">₹</string>
+    <string name="price">Price :</string>
+    <string name="favorite">Favorite</string>
+    <string-array name="location">
+        <item>Current location</item>
+        <item>20 miles</item>
+        <item>50 miles</item>
+    </string-array>
+</resources>

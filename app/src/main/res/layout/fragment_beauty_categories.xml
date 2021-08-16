@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Inner_Fragments.BeautyCategories">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/beauty_categories_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextColor="@color/app_colour"
+                app:tabTextAppearance="@style/MyCustomTabText"
+                android:background="@color/faded_gray"
+                app:tabSelectedTextColor="@color/blue_theme_colour"
+                app:tabIndicatorColor="@color/faded_gray"
+                app:tabPaddingStart="-16dp"
+                app:tabPaddingEnd="-16dp"
+                android:minHeight="50dp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/beauty_categories_view_pager"
+                android:layout_below="@+id/beauty_categories_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            </RelativeLayout>
+
+</FrameLayout>
