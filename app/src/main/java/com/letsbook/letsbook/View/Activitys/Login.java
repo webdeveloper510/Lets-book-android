@@ -20,7 +20,7 @@ import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
     private EditText edTxtemail, edTxtpassword;
-    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
 
     @Override
